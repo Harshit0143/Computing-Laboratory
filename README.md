@@ -18,3 +18,41 @@
 ## Midpoint Rule
 ### Note that `number of midpoints` = `number of intervals` 
 <img width="1669" alt="Screenshot 2023-04-18 at 4 44 37 PM" src="https://user-images.githubusercontent.com/97736991/232760453-df26ce57-723c-4027-acd3-603962bb2e8e.png">
+
+Syllabus:
+
+Before minor1
+
+Bisection 
+False Position
+Fixed Point iteration
+Newton Raphson
+Secant method
+Multiple roots
+Convergence of methods needs to be covered as well
+
+Gauss elimination with all concepts of partial pivoting scaling ill conditioned systems round off errors
+Gauss Jordan Elimination
+Conditions for which they work
+
+After minor 1
+Do little decomposition
+Crouts decomposition
+Cholesky Decomposition 
+These are variants of lu decomposition
+Conditions for convergence and existence
+
+Gauss siedel method
+Gauss jacobi method
+Conditions for convergence
+
+Newton interpolation
+Lagrange interpolation
+
+After minor 2
+Mid point method(single and composite)
+Trapezoidal method(single segment and composite)
+Simpson method (1/8 and 3/8)
+Evaluation of integral with unequal segments
+
+
