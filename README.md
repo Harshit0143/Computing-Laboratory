@@ -89,4 +89,6 @@ $$h = \frac{b-a}{n}$$
 
 # Evaluation of integral with unequal segments
 
+<img width="1235" alt="Screenshot 2023-04-21 at 9 58 52 PM" src="https://user-images.githubusercontent.com/97736991/233687777-04c53bff-2ff4-4b6a-a2e7-73e8866a6cfa.png">
+<img width="983" alt="Screenshot 2023-04-21 at 10 01 12 PM" src="https://user-images.githubusercontent.com/97736991/233688207-a7e4bb7b-3330-415c-89f5-44af38a07934.png">
 
