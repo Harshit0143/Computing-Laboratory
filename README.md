@@ -133,3 +133,16 @@ $$h = \frac{b-a}{n}$$
 # Evaluation of integral with unequal segments
 * Experimental data may not be equally spaced. But we need to find the integral.  
 <img width="1326" alt="Screenshot 2023-04-21 at 10 50 20 PM" src="https://user-images.githubusercontent.com/97736991/233697196-04f8375f-2fb7-4de0-aada-479c7f4e09ef.png">
+
+
+
+
+
+%{
+method --> maximum degree of poly integrated with 0 error 
+mid point:inear
+trapezoid: linear
+simpson_1/3: cubic
+simpsin_3/8: cubic 
+
+}%
