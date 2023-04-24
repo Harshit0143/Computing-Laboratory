@@ -1,32 +1,40 @@
-A =    [5     3     1     1     4;
-       3     2     2     2     3;
-       1     4     2     5     3;
-       2     4     3     1     2;
-       3     2     3     5     3];
+format long
+n  = 10;
+A=rand(n,n);
+b=rand(n,1);
+x = crout_(A,b);
+fprintf("Solutin by crout little's Decomposition: x =\n");
+disp(x);
+x_in = A\b;
 
-%{
-    5.0000    0.6000    0.2000    0.2000    0.8000
-    3.0000    0.2000    7.0000    7.0000    3.0000
-    1.0000    3.4000  -22.0000    0.8636    0.3636
-    2.0000    2.8000  -17.0000   -4.3182    0.4211
-    3.0000    0.2000    1.0000    2.1364   -1.2632
-    
-%} 
-disp(A);
-A = decompose(A);
-disp(A);
-function A = decompose(A)
+fprintf("Solutin by MATLAB in built A\b: x_inbuilt =\n");
+disp(x_in);
+function x = crout_(A,b)
     n = length(A);
-    for j  =  2 : n
+    for j = 2: n
         A(1,j) = A(1,j)/A(1,1);
     end
-    for j =  2: n
-        for i = j:n 
-            A(i,j) = A(i,j) - A(i,1:j-1)*A(1:j-1,j);
+    for j = 2:n
+        for i = j:n
+            A(i,j) = A(i,j) - A(i, 1:j-1)*A(1:j-1, j);
         end
-    
-        for k = j+1:n
-            A(j,k) = (A(j,k)-A(j, 1:j-1)*A(1:j-1,k))/A(j,j);
+        for k = j+1: n
+            A(j,k) = (A(j,k) - A(j,1:j-1)*A(1:j-1,k))/A(j,j);
         end
     end
-end
+
+    %Ly = b
+    %Ux = y
+    y = zeros(n,1);
+    y(1) = b(1)/A(1,1);
+    for i = 2:n
+        y(i) = (b(i) - A(i,1:i-1)*y(1:i-1))/A(i,i);
+    end
+    x = zeros(n,1);
+    x(n) = y(n) ;
+    for i = n-1 : -1 : 1
+        x(i) = y(i)  - A(i,i+1:n)*x(i+1:n);
+
+    end
+
+end 
