@@ -136,13 +136,7 @@ $$h = \frac{b-a}{n}$$
 
 
 
+<img width="1066" alt="Screenshot 2023-04-25 at 12 43 42 AM" src="https://user-images.githubusercontent.com/97736991/234093567-095d8b48-6b73-446a-bf29-e459c39a27ce.png">
 
 
-%{
-method --> maximum degree of poly integrated with 0 error 
-mid point:inear
-trapezoid: linear
-simpson_1/3: cubic
-simpsin_3/8: cubic 
 
-}%
