@@ -142,6 +142,7 @@ $$h = \frac{b-a}{n}$$
 
 # Gauss Operation count
 <img width="184" alt="Screenshot 2023-04-25 at 1 06 27 AM" src="https://user-images.githubusercontent.com/97736991/234098151-5e6af21d-2fcb-402d-93ba-cb6027f97c95.png">
+
 # Gauss Jordan Operation Count 
 <img width="425" alt="Screenshot 2023-04-25 at 1 15 21 AM" src="https://user-images.githubusercontent.com/97736991/234099978-5b1856e4-5bc1-475c-b5e8-55c7af3323b1.png">
 
