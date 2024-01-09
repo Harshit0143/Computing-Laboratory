@@ -1,6 +1,3 @@
-
-
-
 a = 0;
 b  = 4;
 midpoint(a,b);
